@@ -7,10 +7,15 @@
 	color: $white;
 	line-height: 1;
 	font-weight: bold;
-	padding: $pad;
+	font-size: 12px;
+	padding-top: $pad;
+	padding-bottom: $pad;
+	padding-right: $pad-triple;
+	padding-left: $pad-triple;
 	border: 0;
 	text-align: center;
-	
+	text-transform: uppercase;
+
 	&:hover, &:focus {
 		color: $white;
 	}
@@ -35,5 +40,11 @@
 
 
 .text-btn {
-	font-style: italic;
+	font-style: inherit;
+}
+
+.btn-border {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
 }

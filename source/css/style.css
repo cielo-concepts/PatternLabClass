@@ -1030,9 +1030,14 @@ td {
   color: #fff;
   line-height: 1;
   font-weight: bold;
-  padding: 1rem;
+  font-size: 12px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
   border: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 .btn:hover, .btn:focus {
   color: #fff;
@@ -1055,7 +1060,13 @@ td {
 }
 
 .text-btn {
-  font-style: italic;
+  font-style: inherit;
+}
+
+.btn-border {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
 }
 
 /* Generic Placeholder Brick: REMOVE FOR PRODUCTION */
