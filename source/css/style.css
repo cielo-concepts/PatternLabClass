@@ -1437,4 +1437,13 @@ td {
   background: #ffbebe;
 }
 
+.Icon_Gradient_Background {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background-image: -moz-linear-gradient(42deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+  background-image: -webkit-linear-gradient(42deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+  background-image: -ms-linear-gradient(42deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+}
+
 /*# sourceMappingURL=style.css.map */
