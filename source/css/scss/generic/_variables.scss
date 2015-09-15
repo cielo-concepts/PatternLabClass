@@ -83,4 +83,7 @@ $bp-xl : 73em;
 $bp-xxl : 89em;
 $bp-xxxl : 93em;
 
-//
+//Gradients
+$moz-gradient : -moz-linear-gradient( 42deg, rgb(0,240,255) 0%, rgb(118,206,254) 39%, rgb(235,172,253) 100%);
+$webkit-gradient : -webkit-linear-gradient( 42deg, rgb(0,240,255) 0%, rgb(118,206,254) 39%, rgb(235,172,253) 100%);
+$ms-gradient : -ms-linear-gradient( 42deg, rgb(0,240,255) 0%, rgb(118,206,254) 39%, rgb(235,172,253) 100%);
