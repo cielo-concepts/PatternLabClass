@@ -56,6 +56,7 @@ module.exports = function(grunt) {
 				{ expand: true, cwd: './source/css/', src: '*.css', dest: './public/css/' },
 				{ expand: true, cwd: './source/images/', src: ['*.png', '*.jpg', '*.gif', '*.jpeg'], dest: './public/images/' },
 				{ expand: true, cwd: './source/images/sample/', src: ['*.png', '*.jpg', '*.gif', '*.jpeg'], dest: './public/images/sample/'},
+				{ expand: true, cwd: './source/images/psd-icons/', src: ['*.png', '*.jpg', '*.gif', '*.jpeg'], dest: './public/images/psd-icons/'},
 				{ expand: true, cwd: './source/fonts/', src: '*', dest: './public/fonts/'},
 				{ expand: true, cwd: './source/_data/', src: 'annotations.js', dest: './public/data/' }
 				]
@@ -74,13 +75,13 @@ module.exports = function(grunt) {
 			patternlab: ['Gruntfile.js', './builder/lib/patternlab.js']
 		},
 		watch: {
-			// scss: { //scss can be watched if you like
-			//	options: {
-			//		livereload: true
-			//	},
-			// 	files: ['source/css/**/*.scss', 'public/styleguide/css/*.scss'],
-			// 	tasks: ['default']
-			// },
+			scss: { //scss can be watched if you like
+				options: {
+					livereload: true
+				},
+				files: ['source/css/**/*.scss', 'public/styleguide/css/*.scss'],
+				tasks: ['default']
+			},
 			all: {
 				options: {
 					livereload: true
@@ -130,11 +131,11 @@ module.exports = function(grunt) {
 	grunt.task.loadTasks('./builder/');
 
 	//if you choose to use scss, or any preprocessor, you can add it here
-	grunt.registerTask('default', ['clean', 'concat', 'patternlab', /*'sass',*/ 'copy']);
+	grunt.registerTask('default', ['clean', 'concat', 'patternlab', 'sass', 'copy']);
 
 	//travis CI task
-	grunt.registerTask('travis', ['nodeunit', 'clean', 'concat', 'patternlab', /*'sass',*/ 'copy']);
+	grunt.registerTask('travis', ['nodeunit', 'clean', 'concat', 'patternlab', 'sass', 'copy']);
 
-	grunt.registerTask('serve', ['clean', 'concat', 'patternlab', /*'sass',*/ 'copy', 'connect', 'watch']);
+	grunt.registerTask('serve', ['clean', 'concat', 'patternlab', 'sass', 'copy', 'connect', 'watch']);
 
 };

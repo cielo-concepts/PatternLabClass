@@ -1,0 +1,8 @@
+.Icon_Gradient_Background {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background-image: $moz-gradient;
+  background-image: $webkit-gradient;
+  background-image: $ms-gradient;
+}

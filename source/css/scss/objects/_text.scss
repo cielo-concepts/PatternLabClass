@@ -62,7 +62,7 @@
 
 .eyebrow-image {
 	position: relative;
-	
+
 	img {
 		position: relative;
 		z-index: 0;
@@ -74,4 +74,10 @@
 		left: 0;
 		z-index: 1;
 	}
+}
+
+.hr-gradient {
+	background-image: $moz-gradient;
+  background-image: $webkit-gradient;
+  background-image: $ms-gradient;
 }
