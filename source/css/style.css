@@ -877,6 +877,12 @@ td {
   z-index: 1;
 }
 
+.hr-gradient {
+  background-image: -moz-linear-gradient(42deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+  background-image: -webkit-linear-gradient(42deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+  background-image: -ms-linear-gradient(42deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+}
+
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
@@ -1021,12 +1027,10 @@ td {
   margin-right: 0.5rem;
 }
 
-/*------------------------------------*\
-    $BUTTONS
-\*------------------------------------*/
-.btn {
+button,
+.button {
   display: inline-block;
-  background: #333;
+  background: #dfe1e5;
   color: #fff;
   line-height: 1;
   font-weight: bold;
@@ -1039,37 +1043,29 @@ td {
   text-align: center;
   text-transform: uppercase;
 }
-.btn:hover, .btn:focus {
-  color: #fff;
-}
-.btn.disabled {
-  background: #eee;
-  color: #bbb;
-}
 
-.btn-small {
-  padding: 0.5rem;
-}
-
-.btn-large {
-  padding: 0.5rem;
-  text-transform: uppercase;
-  background: #808080;
-  font-size: 1.4rem;
-  font-weight: normal;
-}
-
-.text-btn {
-  font-style: inherit;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-.btn-border {
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.button-purchase {
+  background: transparent;
   border-style: solid;
   border-width: 1px;
   border-radius: 3px;
+  border-color: #fff;
+}
+
+.button-get-started {
+  background: #202123;
+}
+
+.button-tour {
+  background: #4285f4;
+  content: url(../../images/psd-icons/lightbulb.png);
+}
+.button-tour .button-icon {
+  margin-right: 10px;
+  margin-bottom: -5px;
 }
 
 /* Generic Placeholder Brick: REMOVE FOR PRODUCTION */

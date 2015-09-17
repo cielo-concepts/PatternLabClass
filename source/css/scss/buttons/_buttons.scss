@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+.button-purchase {
+	background: transparent;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: $white;
+}
+
+.button-get-started {
+	background: $super-dark-gray;
+}
+
+.button-tour {
+	background: $blue;
+	content: url(../../images/psd-icons/lightbulb.png);
+
+	.button-icon {
+		margin-right: 10px;
+		margin-bottom: -5px;
+	}
+}

@@ -1,0 +1,9 @@
+{
+  "button-purchase": {
+    "buttons": {
+      "text": "Purchase Now",
+      "hasClass": true,
+      "className": "button-purchase"
+    }
+  }
+}

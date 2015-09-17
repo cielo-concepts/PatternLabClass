@@ -1,0 +1,16 @@
+button,
+.button {
+  display: inline-block;
+  background: $gray-2;
+  color: $white;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: $pad;
+  padding-bottom: $pad;
+  padding-right: $pad-triple;
+  padding-left: $pad-triple;
+  border: 0;
+  text-align: center;
+  text-transform: uppercase;
+}

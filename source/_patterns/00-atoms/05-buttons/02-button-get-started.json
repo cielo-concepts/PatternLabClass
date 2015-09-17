@@ -1,0 +1,9 @@
+{
+  "button-get-started": {
+    "buttons": {
+      "text": "Get Started",
+      "hasClass": true,
+      "className": "button-get-started"
+    }
+  }
+}

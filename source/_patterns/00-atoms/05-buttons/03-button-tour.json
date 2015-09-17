@@ -1,0 +1,10 @@
+{
+  "button-tour": {
+    "buttons": {
+      "src": "../../images/psd-icons/lightbulb.png",
+      "text": "Take A Tour",
+      "hasClass": true,
+      "className": "button-tour"
+    }
+  }
+}

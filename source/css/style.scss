@@ -83,7 +83,8 @@
     $COMPONENTS
 \*------------------------------------*/
 @import "scss/objects/icons";
-@import "scss/objects/buttons";
+@import "scss/buttons/buttons-base";
+@import "scss/buttons/buttons";
 @import "scss/objects/blocks";
 @import "scss/objects/lists";
 @import "scss/objects/tooltip";
